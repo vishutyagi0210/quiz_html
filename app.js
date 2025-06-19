@@ -168,6 +168,17 @@ mockTestBtn.addEventListener('click', () => {
   updateMockTotalQuestions();
 });
 
+function shuffleOptionsAndAnswer(question) {
+  const correctOption = question.options[question.answer];
+  const options = [...question.options];
+  for (let i = options.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [options[i], options[j]] = [options[j], options[i]];
+  }
+  question.options = options;
+  question.answer = options.indexOf(correctOption);
+}
+
 startMockBtn.addEventListener('click', () => {
   const total = questions.filter(q => selectedMockCategories.includes(q.category));
   const count = parseInt(mockQuestionCountInput.value);
@@ -182,6 +193,8 @@ startMockBtn.addEventListener('click', () => {
   filteredQuestions = [...total];
   shuffle(filteredQuestions);
   filteredQuestions = filteredQuestions.slice(0, count);
+  // Shuffle options for each question and update answer index
+  filteredQuestions.forEach(q => shuffleOptionsAndAnswer(q));
   currentQuestion = 0;
   score = 0;
   userAnswers = [];
@@ -202,6 +215,8 @@ startBtn.addEventListener('click', () => {
   selectedCategory = categorySelect.value;
   filteredQuestions = questions.filter(q => q.category === selectedCategory);
   shuffle(filteredQuestions);
+  // Shuffle options for each question and update answer index
+  filteredQuestions.forEach(q => shuffleOptionsAndAnswer(q));
   currentQuestion = 0;
   score = 0;
   userAnswers = [];
