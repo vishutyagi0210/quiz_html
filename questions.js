@@ -12,6 +12,238 @@ const questions = [
     answer: 0,
     explanation: 'HTML stands for Hyper Text Markup Language.'
   },
+  // Additional HTML Basics & Syntax Questions (21-40)
+
+{
+  category: 'Basics & Syntax',
+  question: 'Which attribute is used to provide alternative text for images?',
+  options: ['alt', 'title', 'description', 'text'],
+  answer: 0,
+  explanation: 'The alt attribute provides alternative text for images, crucial for accessibility and SEO.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What does the charset attribute in <meta charset="UTF-8"> specify?',
+  options: [
+    'The character encoding of the document',
+    'The type of characters allowed',
+    'The maximum number of characters',
+    'The character style'
+  ],
+  answer: 0,
+  explanation: 'The charset attribute specifies the character encoding, with UTF-8 being the standard for web documents.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which attribute makes an HTML element unique on a page?',
+  options: ['class', 'id', 'name', 'unique'],
+  answer: 1,
+  explanation: 'The id attribute must be unique within a document and is used to identify a specific element.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'How do you display a less-than symbol (<) in HTML content?',
+  options: ['&lt;', '&less;', '&<;', '\\<'],
+  answer: 0,
+  explanation: '&lt; is the HTML entity for the less-than symbol. Using < directly would be interpreted as a tag.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What HTML entity represents a non-breaking space?',
+  options: ['&space;', '&nbsp;', '&nbs;', '&nobreak;'],
+  answer: 1,
+  explanation: '&nbsp; creates a non-breaking space that prevents line breaks between words.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which of these is a block-level element by default?',
+  options: ['<span>', '<a>', '<div>', '<img>'],
+  answer: 2,
+  explanation: '<div> is a block-level element that takes up the full width available. <span> and <a> are inline elements.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What is the difference between <div> and <span>?',
+  options: [
+    '<div> is block-level, <span> is inline',
+    '<div> is for text, <span> is for images',
+    '<div> is HTML5, <span> is HTML4',
+    'There is no difference'
+  ],
+  answer: 0,
+  explanation: '<div> is a block-level container, while <span> is an inline container for styling small portions of text.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Can you nest a <p> element inside another <p> element?',
+  options: [
+    'Yes, always',
+    'No, never',
+    'Only in HTML5',
+    'Only with special attributes'
+  ],
+  answer: 1,
+  explanation: 'Paragraph elements cannot be nested inside other paragraph elements according to HTML specifications.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Where should the <meta charset="UTF-8"> tag be placed?',
+  options: [
+    'In the <body> section',
+    'At the end of the document',
+    'Within the first 1024 characters of the <head>',
+    'After the <title> tag'
+  ],
+  answer: 2,
+  explanation: 'The charset meta tag should be within the first 1024 characters of the document, typically at the start of <head>.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What is the purpose of the <title> element?',
+  options: [
+    'To create a heading on the page',
+    'To set the browser tab title and page title for search engines',
+    'To add a tooltip to elements',
+    'To create a title attribute'
+  ],
+  answer: 1,
+  explanation: 'The <title> element sets the document title shown in browser tabs and is important for SEO.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which HTML entity represents the copyright symbol?',
+  options: ['&copy;', '&copyright;', '&c;', '&(c)'],
+  answer: 0,
+  explanation: '&copy; displays the copyright symbol (©).'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What does "semantic HTML" mean?',
+  options: [
+    'HTML with proper syntax',
+    'HTML that describes the meaning of content',
+    'HTML with CSS styling',
+    'HTML with JavaScript functionality'
+  ],
+  answer: 1,
+  explanation: 'Semantic HTML uses elements that clearly describe their meaning to both browsers and developers.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which attribute can be used on any HTML element to provide additional information?',
+  options: ['class', 'id', 'title', 'name'],
+  answer: 2,
+  explanation: 'The title attribute can be added to any HTML element to provide additional information, often shown as a tooltip.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What is the correct way to specify multiple CSS classes for an element?',
+  options: [
+    'class="class1, class2"',
+    'class="class1 class2"',
+    'class="class1; class2"',
+    'class="class1|class2"'
+  ],
+  answer: 1,
+  explanation: 'Multiple CSS classes are separated by spaces within the class attribute.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which character is used to represent an ampersand (&) in HTML?',
+  options: ['&amp;', '&and;', '&amper;', '\\&'],
+  answer: 0,
+  explanation: '&amp; is the HTML entity for the ampersand character.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What is the purpose of the <head> section in HTML?',
+  options: [
+    'To contain the main content of the page',
+    'To contain metadata and links to external resources',
+    'To create the header of the webpage',
+    'To define the page layout'
+  ],
+  answer: 1,
+  explanation: 'The <head> section contains metadata, title, links to stylesheets, and other information not displayed on the page.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which HTML element is used to define emphasized text?',
+  options: ['<strong>', '<em>', '<i>', '<bold>'],
+  answer: 1,
+  explanation: '<em> is used for emphasized text (usually italic), while <strong> is for strong importance (usually bold).'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What happens if you use an invalid HTML tag?',
+  options: [
+    'The browser will show an error',
+    'The page will not load',
+    'The browser will ignore the unknown tag',
+    'The tag will be converted to <div>'
+  ],
+  answer: 2,
+  explanation: 'Browsers ignore unknown HTML tags and treat them as plain text or inline elements.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which attribute specifies the language of an element\'s content?',
+  options: ['language', 'lang', 'locale', 'tongue'],
+  answer: 1,
+  explanation: 'The lang attribute specifies the language of the element\'s content for accessibility and internationalization.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What is the correct HTML entity for a quotation mark (")?',
+  options: ['&quote;', '&quot;', '&q;', '&"'],
+  answer: 1,
+  explanation: '&quot; represents the quotation mark character in HTML.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which HTML5 element provides a container for navigation links?',
+  options: ['<navigation>', '<nav>', '<menu>', '<links>'],
+  answer: 1,
+  explanation: 'The <nav> element is a semantic HTML5 element specifically for navigation links.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What does the contenteditable attribute do?',
+  options: [
+    'Makes an element clickable',
+    'Makes an element\'s content editable by the user',
+    'Makes an element visible',
+    'Makes an element selectable'
+  ],
+  answer: 1,
+  explanation: 'The contenteditable attribute makes an element\'s content editable in the browser.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which is the correct way to create a horizontal rule in HTML?',
+  options: ['<hr>', '<line>', '<rule>', '<horizontal>'],
+  answer: 0,
+  explanation: '<hr> creates a horizontal rule (line) and is a self-closing tag.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'What is the difference between <strong> and <b> tags?',
+  options: [
+    'No difference, they are identical',
+    '<strong> has semantic meaning, <b> is purely presentational',
+    '<b> is for bold, <strong> is for italic',
+    '<strong> is HTML5, <b> is deprecated'
+  ],
+  answer: 1,
+  explanation: '<strong> indicates strong importance semantically, while <b> is purely for bold presentation without semantic meaning.'
+},
+{
+  category: 'Basics & Syntax',
+  question: 'Which HTML element is used to group related form elements?',
+  options: ['<group>', '<fieldset>', '<form-group>', '<section>'],
+  answer: 1,
+  explanation: '<fieldset> is used to group related form elements and can include a <legend> for description.'
+},
   {
     category: 'Basics & Syntax',
     question: 'Who is known as the father of HTML?',
@@ -187,6 +419,248 @@ const questions = [
   },
 
   // Tags & Attributes (Expanded)
+  // Additional HTML Tags & Attributes Questions (18-42)
+
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to specify the source URL of an image?',
+  options: ['src', 'href', 'url', 'source'],
+  answer: 0,
+  explanation: 'The src attribute specifies the URL of the image file in the <img> tag.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What does the tabindex attribute control?',
+  options: [
+    'The tab order of elements when navigating with the Tab key',
+    'The number of tabs in the browser',
+    'The index of the current tab',
+    'The spacing between tabs'
+  ],
+  answer: 0,
+  explanation: 'tabindex controls the order in which elements receive focus when navigating with the Tab key.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to specify the width and height of an image?',
+  options: [
+    'size',
+    'dimensions',
+    'width and height',
+    'scale'
+  ],
+  answer: 2,
+  explanation: 'The width and height attributes specify the dimensions of an image in pixels.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What is the purpose of the role attribute?',
+  options: [
+    'To define the element\'s role for accessibility',
+    'To specify user permissions',
+    'To set the element\'s importance',
+    'To define CSS styling roles'
+  ],
+  answer: 0,
+  explanation: 'The role attribute defines the element\'s purpose for screen readers and assistive technologies.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to create a dropdown list in a form?',
+  options: ['multiple', 'size', 'list', 'dropdown'],
+  answer: 0,
+  explanation: 'The multiple attribute in <select> allows multiple selections, creating a multi-select dropdown.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What does the defer attribute do in a <script> tag?',
+  options: [
+    'Delays script execution until HTML parsing is complete',
+    'Prevents the script from running',
+    'Loads the script asynchronously',
+    'Caches the script for later use'
+  ],
+  answer: 0,
+  explanation: 'defer delays script execution until the HTML document has been completely parsed.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute makes a form field required?',
+  options: ['required', 'mandatory', 'needed', 'must'],
+  answer: 0,
+  explanation: 'The required attribute specifies that an input field must be filled out before submitting the form.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What is the purpose of the placeholder attribute?',
+  options: [
+    'To provide hint text in input fields',
+    'To set default values',
+    'To validate input',
+    'To format text'
+  ],
+  answer: 0,
+  explanation: 'The placeholder attribute provides hint text that appears in input fields when they are empty.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute specifies that an input field should be disabled?',
+  options: ['disabled', 'readonly', 'inactive', 'locked'],
+  answer: 0,
+  explanation: 'The disabled attribute disables an input field, making it uneditable and preventing form submission.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What does the async attribute do in a <script> tag?',
+  options: [
+    'Loads and executes the script asynchronously',
+    'Synchronizes multiple scripts',
+    'Delays script execution',
+    'Prevents script caching'
+  ],
+  answer: 0,
+  explanation: 'async loads the script asynchronously and executes it as soon as it\'s downloaded, without blocking HTML parsing.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to specify the maximum length of text in an input field?',
+  options: ['maxlength', 'max', 'length', 'limit'],
+  answer: 0,
+  explanation: 'The maxlength attribute specifies the maximum number of characters allowed in an input field.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What is the difference between readonly and disabled attributes?',
+  options: [
+    'readonly allows focus but no editing, disabled prevents both',
+    'disabled allows focus but no editing, readonly prevents both',
+    'They are identical',
+    'readonly is for text, disabled is for buttons'
+  ],
+  answer: 0,
+  explanation: 'readonly fields can receive focus and be selected but not edited; disabled fields cannot be focused or submitted.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to specify autocomplete behavior for form fields?',
+  options: ['autocomplete', 'autofill', 'complete', 'fill'],
+  answer: 0,
+  explanation: 'The autocomplete attribute controls whether browsers should automatically complete form fields.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What does the novalidate attribute do on a <form> tag?',
+  options: [
+    'Disables form validation',
+    'Enables strict validation',
+    'Validates only required fields',
+    'Shows validation messages'
+  ],
+  answer: 0,
+  explanation: 'novalidate disables HTML5 form validation, allowing forms to be submitted without validation checks.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to group radio buttons together?',
+  options: ['name', 'group', 'set', 'collection'],
+  answer: 0,
+  explanation: 'Radio buttons with the same name attribute are grouped together, allowing only one selection per group.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What is the purpose of the value attribute in form elements?',
+  options: [
+    'To specify the current or default value',
+    'To validate input',
+    'To format display',
+    'To set placeholder text'
+  ],
+  answer: 0,
+  explanation: 'The value attribute specifies the current value of form elements and the default value for input fields.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to specify alternative text for area elements in image maps?',
+  options: ['alt', 'title', 'description', 'text'],
+  answer: 0,
+  explanation: 'The alt attribute in <area> tags provides alternative text for image map areas for accessibility.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What does the download attribute do in an <a> tag?',
+  options: [
+    'Forces the linked resource to be downloaded instead of navigated to',
+    'Downloads the current page',
+    'Enables file uploads',
+    'Caches the linked resource'
+  ],
+  answer: 0,
+  explanation: 'The download attribute prompts the user to save the linked resource as a file instead of navigating to it.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute specifies the relationship between the current document and an external resource?',
+  options: ['rel', 'relationship', 'link-type', 'connection'],
+  answer: 0,
+  explanation: 'The rel attribute in <link> and <a> tags specifies the relationship, like "stylesheet" or "nofollow".'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What is the purpose of the coords attribute in <area> tags?',
+  options: [
+    'To define the coordinates of the clickable area',
+    'To set the position on the page',
+    'To specify the size of the area',
+    'To define the color coordinates'
+  ],
+  answer: 0,
+  explanation: 'The coords attribute defines the coordinates of the clickable area in an image map.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to specify the HTTP method for form submission?',
+  options: ['method', 'action', 'type', 'submit'],
+  answer: 0,
+  explanation: 'The method attribute specifies the HTTP method (GET or POST) used when submitting the form.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What does the autofocus attribute do?',
+  options: [
+    'Automatically focuses on the element when the page loads',
+    'Enables auto-completion',
+    'Automatically submits the form',
+    'Focuses on errors'
+  ],
+  answer: 0,
+  explanation: 'autofocus automatically gives focus to an element when the page loads, typically used on form inputs.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to specify the shape of an area in an image map?',
+  options: ['shape', 'type', 'form', 'geometry'],
+  answer: 0,
+  explanation: 'The shape attribute defines the shape of an <area> element: rect, circle, poly, or default.'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'What is the purpose of the enctype attribute in forms?',
+  options: [
+    'To specify how form data should be encoded when submitted',
+    'To encrypt form data',
+    'To validate form fields',
+    'To set the form layout'
+  ],
+  answer: 0,
+  explanation: 'enctype specifies how form data is encoded, important for file uploads (multipart/form-data).'
+},
+{
+  category: 'Tags & Attributes',
+  question: 'Which attribute is used to specify the minimum and maximum values for numeric inputs?',
+  options: ['min and max', 'range', 'limits', 'bounds'],
+  answer: 0,
+  explanation: 'The min and max attributes specify the minimum and maximum values for numeric input types.'
+},
   {
     category: 'Tags & Attributes',
     question: 'Which attribute specifies the URL of the page the link goes to?',
