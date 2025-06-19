@@ -229,6 +229,8 @@ startBtn.addEventListener('click', () => {
 
 function showQuestion() {
   const q = filteredQuestions[currentQuestion];
+  // Shuffle options and update answer index every time the question is shown
+  shuffleOptionsAndAnswer(q);
   questionContainer.textContent = q.question;
   optionsContainer.innerHTML = '';
   explanationDiv.style.display = 'none';
