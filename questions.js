@@ -12,8 +12,6 @@ const questions = [
     answer: 0,
     explanation: 'HTML stands for Hyper Text Markup Language.'
   },
-  // Additional HTML Basics & Syntax Questions (21-40)
-
 {
   category: 'Basics & Syntax',
   question: 'Which attribute is used to provide alternative text for images?',
@@ -419,7 +417,6 @@ const questions = [
   },
 
   // Tags & Attributes (Expanded)
-  // Additional HTML Tags & Attributes Questions (18-42)
 
 {
   category: 'Tags & Attributes',
